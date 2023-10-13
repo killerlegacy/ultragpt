@@ -14,7 +14,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-openai.api_key = "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"
+openai.api_key = "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"
 
 # Set up database connection
 conn = sqlite3.connect('users.db')
