@@ -14,7 +14,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-openai.api_key = "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"
+openai.api_key = "Your Api key"
 
 # Set up database connection
 conn = sqlite3.connect('users.db')
@@ -203,7 +203,7 @@ async def voice_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
    
 def main() -> None:
     # Create the Application and pass it your bot's token.
-    application = Application.builder().token("5789927647:AAETXev_S25O_b071Bz37jclSiYZ-YoGWN8").build()
+    application = Application.builder().token("Your bot token").build()
 # Add handlers to the dispatcher
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_text))
     application.add_handler(MessageHandler(filters.AUDIO & ~filters.COMMAND, audio_message))
